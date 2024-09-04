@@ -146,7 +146,7 @@ public class MasterController {
             return new ResponseEntity<>(new CustomResponse(e.getMessage(),-1),HttpStatus.OK);
         }
     }
-    @GetMapping("/getByCityId")
+    @GetMapping("/getCityById")
     public ResponseEntity<?>getByCityId(@RequestParam Long cityId){
         try{
             return new ResponseEntity<>(new EntityResponse(iMasterService.getByCityId(cityId),0),HttpStatus.OK);
